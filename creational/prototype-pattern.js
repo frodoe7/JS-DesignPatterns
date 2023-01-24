@@ -10,8 +10,10 @@ class car
     }
 }
 
-car.prototype.sayHi = function () {
-    console.log("Hi , My model :" , this.model , " - My color :" , this.color)
+car.prototype = function () {
+    sayHi: function() {
+       console.log("Hi , My model :" , this.model , " - My color :" , this.color)
+    }
 }
 
 module.exports = car;
